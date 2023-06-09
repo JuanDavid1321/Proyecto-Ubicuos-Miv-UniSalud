@@ -93,26 +93,12 @@
           <div id="cargaLineal2" class="mi-grafica"></div>  
         </div>
 
-        <div id="contenido-div3" class="card">
-          <div id="cargaLineal3" class="mi-grafica"></div>  
-        </div>
-
-        <div id="contenido-div4" class="card">
-          <div id="cargaLineal4" class="mi-grafica"></div>
-        </div>
     </main>
   </body>
 </html>
 
 <script src="js/convertpdf.js"></script>
 
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $("#cargaLineal3").load("php/lineal3.php");
-    $("#cargaLineal4").load("php/lineal4.php");
-  });
-</script>
 
 <?php
 	require_once 'php/consultaTemp_M.php';

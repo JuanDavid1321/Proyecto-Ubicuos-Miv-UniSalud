@@ -49,12 +49,6 @@
             </a>
           </li>
           <li>
-            <a href="servicioDatos.php">
-              <i class="fa-solid fa-table-list"></i>
-              Datos en tiempo real
-            </a>
-          </li>
-          <li>
             <a id="cierre" href="index.php">
               <i class="fa-solid fa-user-xmark"></i>
               Cerrar Sesión
