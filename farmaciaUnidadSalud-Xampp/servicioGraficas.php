@@ -57,6 +57,7 @@
         <form action="servicioGraficas.php" method="POST">
             <label for="mes-selecionado" class="etiqueta-select">Seleccione un día de Junio: </label>
             <select name="dia" class="selector-mes" id="mes-selecionado" >
+              <option value="9">9</option>
               <option value="13">13</option>
               <option value="14">14</option>
               <option value="15">15</option>
