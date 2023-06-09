@@ -32,14 +32,14 @@ document.getElementById('descargar-pdf').addEventListener('click', function() {
     // Agregar linea
     // pdf.line(25, 90, 550, 90);
 
-    pdf.save('reporte_temp_mañana.pdf'); // descarga el archivo PDF
+    pdf.save('reporte_temp.pdf'); // descarga el archivo PDF
   });
 
 
   // Captura la imagen de la gráfica
   html2canvas(document.getElementById('cargaLineal2'), {
     scale: 2 // aumenta la calidad de la imagen
-  }).then(function(canvas) {
+  }).the|n(function(canvas) {
     // Crea un objeto jsPDF y agrega la imagen al archivo PDF
     var imgData = canvas.toDataURL('image/png');
     var pdf = new jsPDF('landscape', 'px');
@@ -69,6 +69,6 @@ document.getElementById('descargar-pdf').addEventListener('click', function() {
     // Agregar linea
     // pdf.line(25, 90, 550, 90);
 
-    pdf.save('reporte_hum_mañana.pdf'); // descarga el archivo PDF
+    pdf.save('reporte_hum.pdf'); // descarga el archivo PDF
   }) 
 });

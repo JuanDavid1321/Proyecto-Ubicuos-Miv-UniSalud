@@ -43,12 +43,6 @@
             </a>
           </li>
           <li>
-            <a href="servicioDatos.php">
-              <i class="fa-solid fa-table-list"></i>
-              Datos en tiempo real
-            </a>
-          </li>
-          <li>
             <a id="cierre" href="index.php">
               <i class="fa-solid fa-user-xmark"></i>
               Cerrar Sesión
@@ -61,20 +55,19 @@
     <main style="margin: 20px;">
       <section class="contenedor-mes">
         <form action="servicioGraficas.php" method="POST">
-            <label for="mes-selecionado" class="etiqueta-select">Seleccione un mes: </label>
-            <select name="mes" class="selector-mes" id="mes-selecionado" >
-              <option value="1">Enero</option>
-              <option value="2">Febrero</option>
-              <option value="3">Marzo</option>
-              <option value="4">Abril</option>
-              <option value="5">Mayo</option>
-              <option value="6">Junio</option>
-              <option value="7">Julio</option>
-              <option value="8">Agosto</option>
-              <option value="9">Septiembre</option>
-              <option value="10">Octubre</option>
-              <option value="11">Noviembre</option>
-              <option value="12">Diciembre</option>
+            <label for="mes-selecionado" class="etiqueta-select">Seleccione un día de Junio: </label>
+            <select name="dia" class="selector-mes" id="mes-selecionado" >
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
             </select>
             <button id="consultar" type="submit" class="consulta">
               <i class="fa-solid fa-magnifying-glass"></i>

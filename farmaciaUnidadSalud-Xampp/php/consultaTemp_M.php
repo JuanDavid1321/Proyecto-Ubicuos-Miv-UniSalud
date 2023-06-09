@@ -13,11 +13,11 @@
 <?php
 	require 'dbConnection.php'; 
 
-	$mesSeleccionado = (isset($_POST['mes'])) ? $_POST['mes'] : 1;
+	$diaSeleccionado = (isset($_POST['dia'])) ? $_POST['dia'] : 1;
 
-	$sql = "SELECT fecha,temp,hora as count 
-			from registros WHERE MONTH(fecha) = '$mesSeleccionado' AND hora between '09:00:00' and '10:59:59'
-			GROUP BY DAY(fecha) ORDER BY fecha "; 
+	$sql = "SELECT hora,temp,fecha 
+			from registros WHERE DAY(fecha) = '$diaSeleccionado'
+			ORDER BY hora"; 
 
 	$result = mysqli_query($conn,$sql);
 
@@ -59,7 +59,7 @@
 
     var layout = {
         title:{
-			text: 'TEMPERATURA - MAÑANA',
+			text: 'TEMPERATURA',
 			font:{
 				family: 'Muli',
 				size: 25,
@@ -69,19 +69,19 @@
 			}
 		},
         xaxis: {
-			type: 'date',
-			tickmode: 'day',
-			dtick: 86400000, // Un día en milisegundos
+			// type: 'date',
+			// tickmode: 'day',
+			// dtick: 86400000, // Un día en milisegundos
             title: {
-				text:'FECHAS',
+				text:'HORAS',
 				font:{
 					family: 'Muli',	
 					color: '#af0b19',
 				}
 			},
-			ticktext: textValues,
-            showgrid: true,
-            showline: true
+			// ticktext: textValues,
+            // showgrid: true,
+            // showline: true
         },
         yaxis: {
             title:{
