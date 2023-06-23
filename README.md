@@ -1,6 +1,6 @@
 # Miv-UniSalud
 
-Este repositorio contiene el código fuente y la documentación para un proyecto de monitorización de temperatura y humedad utilizando ESP32. El proyecto está diseñado para leer datos de un sensor de temperatura y humedad en un contexto farmacéutico, enviar los datos a un servidor web, mostrar los resultados en tiempo real y generar reportes.
+Este repositorio contiene el código fuente y la documentación para un proyecto de monitorización de temperatura y humedad en un contexto farmacéutico, utilizando la placa microcontroladora ESP32. El proyecto está diseñado para leer datos de un sensor de temperatura y humedad, enviar los datos a un servidor web, mostrar los resultados en tiempo real y generar reportes.
 
 ## Características
 - Lectura de temperatura y humedad utilizando el sensor DHT11.
