@@ -34,27 +34,27 @@ Este repositorio contiene el código fuente y la documentación para un proyecto
 
 ## Uso
 ### Configuración del entorno:
+1. Instala Arduino IDE en tu computadora si no lo has hecho.
+2. Abre Arduino IDE y configura la placa ESP32 y el puerto serial correspondiente.
+3. Instala las bibliotecas DHT y WiFi para ESP32.
 
-Instala Arduino IDE en tu computadora si no lo has hecho.
-Abre Arduino IDE y configura la placa ESP32 y el puerto serial correspondiente.
-Instala las bibliotecas DHT y WiFi para ESP32.
-Conexión del hardware:
+### Conexión del hardware:
+1. Conecta el sensor de temperatura y humedad DHT11 al pin designado en el ESP32 según la configuración establecida en el archivo sensor.h
+2. Asegúrate de que el ESP32 esté conectado a una red Wi-Fi, verificando las credenciales en el archivo conexiones.cpp
 
-Conecta el sensor de temperatura y humedad DHT11 al pin designado en el ESP32 según la configuración establecida en el archivo sensor.h.
-Asegúrate de que el ESP32 esté conectado a una red Wi-Fi.
-Configuración del servidor:
+### Configuración de servidores:
+1. Actualiza las variables host, port y url en el archivo comunicaciones.cpp con la información del servidor web al que deseas enviar los datos.
+2. Actualiza la variable ntpServer en el archivo reloj.cpp con la información del servidor ntp de tu país para actualizar el rtc interno de la ESP32.
 
-Actualiza las variables host, port y url en el archivo comunicaciones.h con la información del servidor web al que deseas enviar los datos.
-Carga del código:
+### Carga del código:
+1. Abre el archivo main.ino en Arduino IDE.
+2. Verifica el código para asegurarte de que todas las configuraciones sean correctas.
+3. Carga el código en el ESP32.
 
-Abre el archivo main.ino en Arduino IDE.
-Verifica el código para asegurarte de que todas las configuraciones sean correctas.
-Carga el código en el ESP32.
-Monitoreo de los datos:
+### Monitoreo de los datos:
+1. Una vez que el código esté cargado en el ESP32, comenzará a leer los datos de temperatura y humedad y enviarlos al servidor web según la configuración establecida.
+2. También puedes realizar un monitoreo continuo de los datos utilizando la interfaz web del servidor. 
 
-Una vez que el código esté cargado en el ESP32, comenzará a leer los datos de temperatura y humedad y enviarlos al servidor web según la configuración establecida.
-Puedes verificar los datos enviados al servidor accediendo a la URL especificada en la variable url y verificando la respuesta del servidor.
-También puedes realizar un monitoreo continuo de los datos utilizando la interfaz web del servidor.
 
 ## Contribución
 Este proyecto ha sido desarrollado como parte de un curso académico y no aceptamos contribuciones externas. Sin embargo, si encuentra algún error o problema en la aplicación, puede informarlo a través de los issues en este repositorio.
