@@ -22,14 +22,15 @@ Este repositorio contiene el código fuente y la documentación para un proyecto
 - MySQL
 - phpMyAdmin
 - Apache Web Server
-- Bibliotecas:
+- Bootstrap 5 
+- Bibliotecas lenguaje C:
   - DHT
   - WIFI
-- Biblioteca ESP32TIME
-- Biblioteca Plotly.js
-- Biblioteca html2canvas
-- Biblioteca jsPDF
-- Bootstrap 5 
+  - ESP32TIME
+- Bibliotecas lenguaje JavaScript:
+  - Plotly.js
+  - html2canvas
+  - jsPDF
 
 ## Uso
 ### Configuración del entorno:
