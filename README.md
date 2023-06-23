@@ -1,6 +1,6 @@
 # Miv-UniSalud
 
-Este repositorio contiene el código fuente y la documentación para un proyecto de monitorización de temperatura y humedad utilizando ESP32. El proyecto está diseñado para leer datos de un sensor de temperatura y humedad, enviar los datos a un servidor web y mostrar los resultados en tiempo real.
+Este repositorio contiene el código fuente y la documentación para un proyecto de monitorización de temperatura y humedad utilizando ESP32. El proyecto está diseñado para leer datos de un sensor de temperatura y humedad en un contexto farmacéutico, enviar los datos a un servidor web, mostrar los resultados en tiempo real y generar reportes.
 
 ## Características
 - Lectura de temperatura y humedad utilizando el sensor DHT11.
@@ -11,12 +11,15 @@ Este repositorio contiene el código fuente y la documentación para un proyecto
 - Descarga de reportes en formato PDF.
 
 ## Requisitos de Hardware
-- ESP32 board.
-- Sensor de temperatura y humedad DHT11.
-- Cables de conexión.
+- ESP32
+- Sensor de temperatura y humedad DHT11
+- Cables de conexión
 
 ## Requisitos de Software
 - Arduino IDE
+- MySQL
+- phpMyAdmin
+- Apache Web Server
 - Biblioteca DHT
 - Biblioteca WIFI
 - Biblioteca ESP32TIME
@@ -24,10 +27,9 @@ Este repositorio contiene el código fuente y la documentación para un proyecto
 - Biblioteca html2canvas
 - Biblioteca jsPDF
 - Bootstrap 5 
-- Conexión a internet.
 
 ## Uso
-Configuración del entorno:
+### Configuración del entorno:
 
 Instala Arduino IDE en tu computadora si no lo has hecho.
 Abre Arduino IDE y configura la placa ESP32 y el puerto serial correspondiente.
