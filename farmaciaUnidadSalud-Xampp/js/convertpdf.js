@@ -39,7 +39,7 @@ document.getElementById('descargar-pdf').addEventListener('click', function() {
   // Captura la imagen de la gráfica
   html2canvas(document.getElementById('cargaLineal2'), {
     scale: 2 // aumenta la calidad de la imagen
-  }).the|n(function(canvas) {
+  }).then(function(canvas) {
     // Crea un objeto jsPDF y agrega la imagen al archivo PDF
     var imgData = canvas.toDataURL('image/png');
     var pdf = new jsPDF('landscape', 'px');

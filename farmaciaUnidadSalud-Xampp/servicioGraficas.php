@@ -57,17 +57,14 @@
         <form action="servicioGraficas.php" method="POST">
             <label for="mes-selecionado" class="etiqueta-select">Seleccione un día de Junio: </label>
             <select name="dia" class="selector-mes" id="mes-selecionado" >
-              <option value="9">9</option>
               <option value="13">13</option>
               <option value="14">14</option>
               <option value="15">15</option>
               <option value="16">16</option>
               <option value="17">17</option>
-              <option value="18">18</option>
+              <option value="18" selected>18</option>
               <option value="19">19</option>
               <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
               <option value="23">23</option>
             </select>
             <button id="consultar" type="submit" class="consulta">
@@ -91,7 +88,7 @@
   </body>
 </html>
 
-<script src="js/convertpdf.js"></script>
+<script src="js/convertPDF.js"></script>
 
 
 <?php

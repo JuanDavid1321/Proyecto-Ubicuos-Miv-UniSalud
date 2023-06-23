@@ -13,7 +13,7 @@
 <?php
 	require 'dbConnection.php'; 
 
-	$diaSeleccionado = (isset($_POST['dia'])) ? $_POST['dia'] : 1;
+	$diaSeleccionado = (isset($_POST['dia'])) ? $_POST['dia'] : 10;
 
 	$sql = "SELECT hora,hum,fecha 
 			from registros WHERE DAY(fecha) = '$diaSeleccionado'
