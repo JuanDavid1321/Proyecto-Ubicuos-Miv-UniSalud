@@ -4,9 +4,11 @@ Este repositorio contiene el código fuente y la documentación para un proyecto
 
 ## Características
 - Lectura de temperatura y humedad utilizando el sensor DHT11.
-- Conexión Wi-Fi para enviar los datos al servidor.
-- Envío de datos utilizando HTTP.
 - Actualización periódica de los datos utilizando una ventana de tiempo.
+- Conexión Wi-Fi para enviar los datos al servidor.
+- Gestión energética de la placa microcontroladora.
+- Envío de datos utilizando HTTP.
+- Autenticación de usuarios en una aplicación web.
 - Visualización de los datos en una interfaz web.
 - Descarga de reportes en formato PDF.
 
@@ -20,8 +22,9 @@ Este repositorio contiene el código fuente y la documentación para un proyecto
 - MySQL
 - phpMyAdmin
 - Apache Web Server
-- Biblioteca DHT
-- Biblioteca WIFI
+- Bibliotecas:
+  - DHT
+  - WIFI
 - Biblioteca ESP32TIME
 - Biblioteca Plotly.js
 - Biblioteca html2canvas
